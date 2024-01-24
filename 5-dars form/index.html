@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Baxtiyorov Bekhruz">
+    <title>Form taglari</title>
+</head>
+<body>
+    <!-- placeholderning vazifasi shundan iboratki nima yozish kerakligi kursatiladi agarda uning joyiga suz yozilsa u placeholdeda yozilgan suzlar uchiriladi -->
+    <!-- input types --- 
+        password  
+        text
+        radio
+        checkbox-->
+
+
+        <!-- label -- qator olib berishda ishlatiladi
+        label ni for qismiga nima deb class bergan bulsak input ni id siga ham shu class nomini beramiz -->
+    <form>
+      <input type="text" placeholder="text area">
+      <p> Name :  <input type="text" placeholder="Enter Your Name "></p>
+      <label for="name">Name : <input type="text" placeholder="Enter your name" id="name"> </label>
+      <br><br><label for="password">Password <input type="password" placeholder="note your password" id="password"></label>
+            
+      
+      <!-- textarea -- textareaning vazifasi juda ham kup lekin kuproq koment bildirishda ishlatiladi
+        bu yerda cols -- balandlikka teng 
+        bu yerda rows -- qator vazifasida-->
+
+      <p>Siz darslarimiz haqida qanday fikrdasiz</p>
+       <textarea name="comment" id="comment" cols="50" rows="5"
+       placeholder="Enter your comment"></textarea>
+
+         <!-- input type="radio" ning vazifasi shundan iboratki malumotlarni bitta bitta olib berish radio sifatida chiqarish  -->
+
+       <p>Iltimos yoqtirgan futbolchingizni tanlang</p>   
+       <input type="radio" name="futbolchi" value="messi">Messi
+       <input type="radio" name="futbolchi" value="neymar jr">Neymar Jr
+       <input type="radio" name="futbolchi" value="ronaldo">Ronaldo
+    
+        <!-- checkbox turtburchak shaklda tick vazifasini beradi -->
+       <p>Iltimos sevimli komandangizni tanlang</p>
+       <input type="checkbox" name="komanda" value="barca">Barca
+       <input type="checkbox" name="komanda" value="real">Real Madrid
+       <input type="checkbox" name="komanda" value="al nasr">Al Nasr
+
+        <!-- option tanlab berish uchun ishlatiladi selected esa tanlangan narsani birinchi uringa quyib chiqaradi  -->
+       <p>Iltimos shahringizni tanlang</p>
+       <select name="komanda">
+            <option value="Navoiy">Navoiy</option>
+            <option value="Toshkent" selected>Toshkent</option>
+            <option value="Jizzax">Jizzax</option>
+            <option value="Surxandaryo">Surxandaryo</option>
+            <option value="Buxoro">Buxoro</option>
+       </select>
+    </form>
+</body>
+</html>
